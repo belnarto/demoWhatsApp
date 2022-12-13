@@ -29,10 +29,14 @@ tasks.named('test') {
     useJUnitPlatform()
 }
 
-jar {
-    manifest {
-        attributes(
-            'Main-Class': 'com.example.demowhatsapp.DemoWhatsAppApplication'
-        )
-    }
+//jar {
+//    manifest {
+//        attributes(
+//            'Main-Class': 'com.example.demowhatsapp.DemoWhatsAppApplication'
+//        )
+//    }
+//}
+
+tasks.jar {
+    enabled = false
 }
